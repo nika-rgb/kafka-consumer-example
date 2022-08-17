@@ -1,0 +1,8 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: secondConsumer
+  kafka:
+    bootstrap-servers: ${KAFKA_CONSUMER_ORDER_BOOTSTRAP_SERVERS:kafka:9092}

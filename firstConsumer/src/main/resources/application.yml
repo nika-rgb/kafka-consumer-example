@@ -1,0 +1,10 @@
+server:
+  port: 9096
+
+spring:
+  application:
+    name: firstConsumer
+  kafka:
+    bootstrap-servers: ${KAFKA_CONSUMER_BOOTSTRAP_SERVER:kafka:9092}
+    consumer:
+      group-id: kafka-demo-consumer-group
